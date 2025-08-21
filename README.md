@@ -176,8 +176,7 @@ Given budgets for TV, Radio, and Newspaper, the predicted sales are:
 ---
 
 ## Screenshots
-- Linear Regression Plot: ![TV vs Sales Scatter Plot](tv.png)
-- Web Interface: ![Base Intercept Screenshot, Terminal Screemshot ](Screenshot_2025-08-22_01_33_06.png)(Screenshot_2025-08-22_01_33_50.png)(Screenshot_2025-08-22_01_34_21.png)
+- Web Interface: ![Base Intercept Screenshot, Terminal Screemshot ](Screenshot_2025-08-22_01_33_06.png)
 - 
 
 ---
