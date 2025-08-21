@@ -176,8 +176,9 @@ Given budgets for TV, Radio, and Newspaper, the predicted sales are:
 ---
 
 ## Screenshots
-- Web Interface: ![Base Intercept Screenshot, Terminal Screemshot ](Screenshot_2025-08-22_01_33_06.png)
-- 
+- Web Interface: ![Base Intercept Screenshot](Screenshot_2025-08-22_01_33_06.png)
+- Terminal Interface: ![Terminal Screenshot](Screenshot_2025-08-22_01_33_50.png)
+- Prediction Interface: ![Pred Screenshot](Screenshot_2025-08-22_01_34_21.png)
 
 ---
 
