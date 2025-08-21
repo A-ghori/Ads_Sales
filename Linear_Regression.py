@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('/Users/user/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Developer/jupyter/Ads_Sales/Advertising.csv')
+df = pd.read_csv('/home/shubhayu/Developer/Ads_Sales/Advertising.csv')
 print(df.head())
 
 
@@ -58,3 +58,25 @@ acc = mean_absolute_error(y_test,y_pred) #MAE = \frac{1}{n} \sum_{i=1}^{n} |y_{t
 
 
 print(acc) # acc - 1.274826210954934
+r2_score(y_test, y_pred)
+
+
+# Prediction function
+def predict_sales(tv_budget, radio_budget, newspaper_budget):
+    features = np.array([[tv_budget, radio_budget, newspaper_budget]])
+    result = lr.predict(features)   # ye array return karega
+    return result[0]                # single value nikalo
+
+# Pehli row ka data check karna
+print(df.iloc[0])
+
+# Predict karna first row ke budget ke liye
+tv_budget = 230.1
+radio_budget = 37.8
+newspaper_budget = 69.2
+
+sales = predict_sales(tv_budget, radio_budget, newspaper_budget)
+print(f"Predicted Sales: {sales}") #Predicted Sales: 21.372540280396883
+
+print(lr.coef_) #[0.05450927 0.10094536 0.00433665]
+print(lr.intercept_) #4.714126402214127
